@@ -1,0 +1,3 @@
+/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate.dir
+/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-subbuild/CMakeFiles/edit_cache.dir
+/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-subbuild/CMakeFiles/rebuild_cache.dir

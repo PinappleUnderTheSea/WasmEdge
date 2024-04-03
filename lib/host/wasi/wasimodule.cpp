@@ -63,7 +63,7 @@ WasiModule::WasiModule() : ModuleInstance("wasi_snapshot_preview1") {
   addHostFunc("proc_raise", std::make_unique<WasiProcRaise>(Env));
   addHostFunc("sched_yield", std::make_unique<WasiSchedYield>(Env));
   addHostFunc("random_get", std::make_unique<WasiRandomGet>(Env));
-  // To make the socket API compatible with the old one,
+  // To make the socket API compatible with the old oneit p
   // we will duplicate all the API to V1 and V2.
   // The V1 presents the original behavior before 0.12 release.
   // On the other hand, the V2 presents the new behavior including

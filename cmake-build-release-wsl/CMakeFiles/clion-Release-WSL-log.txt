@@ -1,0 +1,35 @@
+C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G 'CodeBlocks - Unix Makefiles' -S /mnt/f/CanNotGraduate/WasmEdge -B /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl; exitcode=$?; sleep 0.001; (exit $exitcode)"
+[ 11%] Performing download step (git clone) for 'fmt-populate'
+Cloning into 'fmt-src'...
+fatal: unable to access 'https://github.com/fmtlib/fmt.git/': Failed to connect to github.com port 443 after 21033 ms: Connection refused
+Cloning into 'fmt-src'...
+fatal: unable to access 'https://github.com/fmtlib/fmt.git/': Failed to connect to github.com port 443 after 21041 ms: Connection refused
+Cloning into 'fmt-src'...
+fatal: unable to access 'https://github.com/fmtlib/fmt.git/': Failed to connect to github.com port 443 after 21050 ms: Connection refused
+-- Had to git clone more than once:
+          3 times.
+CMake Error at fmt-subbuild/fmt-populate-prefix/tmp/fmt-populate-gitclone.cmake:31 (message):
+  Failed to clone repository: 'https://github.com/fmtlib/fmt.git'
+
+
+gmake[2]: *** [CMakeFiles/fmt-populate.dir/build.make:102: fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-download] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/fmt-populate.dir/all] Error 2
+gmake: *** [Makefile:91: all] Error 2
+
+CMake Error at /usr/share/cmake-3.22/Modules/FetchContent.cmake:1087 (message):
+  Build step for fmt failed: 2
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FetchContent.cmake:1216:EVAL:2 (__FetchContent_directPopulate)
+  /usr/share/cmake-3.22/Modules/FetchContent.cmake:1216 (cmake_language)
+  /usr/share/cmake-3.22/Modules/FetchContent.cmake:1259 (FetchContent_Populate)
+  lib/common/CMakeLists.txt:13 (FetchContent_MakeAvailable)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/CMakeFiles/CMakeOutput.log".
+
+无法获取编译器信息:
+	无法启动进程，工作目录 'F:\CanNotGraduate\WasmEdge\cmake-build-release-wsl\thirdparty\blake3' 不存在
+	无法启动进程，工作目录 'F:\CanNotGraduate\WasmEdge\cmake-build-release-wsl\tools\wasmedge' 不存在
+	无法启动进程，工作目录 'F:\CanNotGraduate\WasmEdge\cmake-build-release-wsl\lib\api' 不存在
+	无法启动进程，工作目录 'F:\CanNotGraduate\WasmEdge\cmake-build-release-wsl\lib\driver' 不存在
