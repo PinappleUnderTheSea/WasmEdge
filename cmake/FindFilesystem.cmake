@@ -204,7 +204,8 @@ if(CXX_FILESYSTEM_HAVE_FS)
     endif()
 
     if(can_link)
-        add_library(std::filesystem INTERFACE IMPORTED)
+        add_library(std::filesystem INTERFACE IMPORTED
+                ../include/common/String.h)
         set(_found TRUE)
 
         if(CXX_FILESYSTEM_NO_LINK_NEEDED)

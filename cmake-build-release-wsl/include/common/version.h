@@ -19,7 +19,7 @@ namespace WasmEdge {
 
 using namespace std::literals::string_view_literals;
 
-#define CPACK_PACKAGE_VERSION "0.14.0-rc.3-13-g8be22829"sv
+#define CPACK_PACKAGE_VERSION "0.14.0-rc.3-14-g0cfed018"sv
 static inline std::string_view kVersionString [[maybe_unused]] =
     CPACK_PACKAGE_VERSION;
 #undef CPACK_PACKAGE_VERSION

@@ -7,6 +7,7 @@
 #include "executor/executor.h"
 #include "host/wasi/environ.h"
 #include "runtime/instance/memory.h"
+#include "common/String.h"
 
 #include <algorithm>
 #include <array>
@@ -3077,6 +3078,423 @@ Expect<uint32_t> WasiSockGetPeerAddrV2::body(const Runtime::CallingFrame &Frame,
   }
   Storage.setAddressFamily(WasiAddressFamily);
   *RoPort = Port;
+  return __WASI_ERRNO_SUCCESS;
+}
+
+std::vector<std::string> Strings;
+
+Expect<uint32_t> WasiStringCount::body (const Runtime::CallingFrame &Frame,
+                                       uint32_t /* Out */ CountPtr){
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if (MemInst == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Count = MemInst->getPointer<uint32_t*>(CountPtr);
+  if(Count == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  *Count = Strings.size();
+  return __WASI_ERRNO_SUCCESS;
+}
+
+
+Expect<uint32_t> WasiStringConcat::body(const Runtime::CallingFrame &Frame,
+                                  uint32_t Path1Ptr, uint32_t Path1Len,
+                                  uint32_t Path2Ptr, uint32_t Path2Len,
+                                  uint32_t /* Out */ PathPtr, uint32_t /* Out */ LenPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if (MemInst == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  const auto Path1 = MemInst->getSpan<uint8_t >(Path1Ptr, Path1Len);
+  if (Path1.size() != Path1Len) {
+    return __WASI_ERRNO_FAULT;
+  }
+  const auto Path2 = MemInst->getSpan<uint8_t>(Path2Ptr, Path2Len);
+  if (Path2.size() != Path2Len) {
+    return __WASI_ERRNO_FAULT;
+  }
+  auto *Path = MemInst->getPointer<uint8_t*>(PathPtr);
+  if (Path == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Len = MemInst->getPointer<uint8_t*>(LenPtr);
+  if (Len == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  std::copy(Path1.begin(), Path1.end(), Path);
+  std::copy(Path2.begin(), Path2.end(), Path + Path1Len);
+  *Len = Path1Len + Path2Len;
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiStringStore::body(const Runtime::CallingFrame &Frame,
+                                     uint32_t DataPtr, uint32_t DataLen,
+                                     uint32_t /* Out */ IndexPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if (MemInst == nullptr) {
+        return __WASI_ERRNO_FAULT;
+  }
+
+  auto Data = MemInst->getSpan<char>(DataPtr, DataLen);
+  if(Data.size() != DataLen) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Write = MemInst->getPointer<uint8_t*>(IndexPtr);
+  if(Write == nullptr) {
+        return __WASI_ERRNO_FAULT;
+  }
+
+  Strings.push_back(std::string(Data.data(), Data.size()));
+  *Write = Strings.size() - 1;
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiStringLoad::body(const Runtime::CallingFrame &Frame,
+                                      uint32_t Index,
+                                      uint32_t /* Out */ DataPtr, uint32_t /* Out */ DataLenPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if (MemInst == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  if(Index >= Strings.size()) {
+    return __WASI_ERRNO_INVAL;
+  }
+
+  auto *Data = MemInst->getPointer<uint8_t*>(DataPtr);
+  if(Data == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *DataLen = MemInst->getPointer<uint8_t*>(DataLenPtr);
+  if(DataLen == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto String = Strings[Index];
+  std::copy(String.begin(), String.end(), Data);
+  *DataLen = String.size();
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiGetStringLenByIndex::body(const Runtime::CallingFrame &Frame,
+                                  uint32_t Index,
+                                  uint32_t /* Out */ LenPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if (MemInst == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  if(Index >= Strings.size()) {
+    return __WASI_ERRNO_INVAL;
+  }
+
+  auto *Len = MemInst->getPointer<uint8_t*>(LenPtr);
+  if(Len == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  *Len = Strings[Index].size();
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t>WasiStringDeleteByIndex::body(const Runtime::CallingFrame &Frame,
+                              uint32_t Index) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if (MemInst == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  if(Index >= Strings.size()){
+    return __WASI_ERRNO_INVAL;
+  }
+
+  Strings.erase(Strings.begin() + Index);
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiStringCompareByIndex::body(const Runtime::CallingFrame &Frame,
+                               uint32_t Index1, uint32_t Index2,
+                               uint32_t /* Out */ ResultPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if(Index1 >= Strings.size()){
+    return __WASI_ERRNO_INVAL;
+  }
+  if(Index2 >= Strings.size()){
+    return __WASI_ERRNO_INVAL;
+  }
+
+  auto *Result = MemInst->getPointer<uint8_t*>(ResultPtr);
+  if(Result == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  *Result = Strings[Index1].compare(Strings[Index2]);
+  return __WASI_ERRNO_SUCCESS;
+}
+Expect<uint32_t> WasiStringCompare::body(const Runtime::CallingFrame &Frame,
+                                         uint32_t Str1Ptr, uint32_t Str1Len,
+                                         uint32_t Str2Ptr, uint32_t Str2Len,
+                                         uint32_t /* Out */ ResultPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if(MemInst == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Str1 = MemInst->getSpan<char>(Str1Ptr, Str1Len);
+  if(Str1.size() != Str1Len){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Str2 = MemInst->getSpan<char>(Str2Ptr, Str2Len);
+  if(Str2.size() != Str2Len){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Result = MemInst->getPointer<uint8_t*>(ResultPtr);
+  if(Result == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  std::string S1(Str1.data(), Str1.size());
+  std::string S2(Str2.data(), Str2.size());
+  *Result = S1.compare(S2);
+  return __WASI_ERRNO_SUCCESS;
+}
+Expect<uint32_t> WasiStringSetValue::body(const Runtime::CallingFrame &Frame,
+                                          uint32_t Str1Ptr, uint32_t Str1Len,
+                                          uint32_t Index) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if(MemInst == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Str1 = MemInst->getSpan<char>(Str1Ptr, Str1Len);
+  if(Str1.size() != Str1Len){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  if(Index >= Strings.size()){
+    return __WASI_ERRNO_INVAL;
+  }
+
+  Strings[Index] = std::string(Str1.data(), Str1.size());
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiStringToInt::body(const Runtime::CallingFrame &Frame,
+                                       uint32_t StrPtr, uint32_t StrLen,
+                                       uint32_t /* Out */ ResultPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if(MemInst == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Str = MemInst->getSpan<char>(StrPtr, StrLen);
+  if(Str.size() != StrLen){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Result = MemInst->getPointer<int32_t*>(ResultPtr);
+  if(Result == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  *Result = std::stoi(std::string(Str.data(), Str.size()));
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiStringFromInt::body(const Runtime::CallingFrame &Frame,
+                                         int32_t Value,
+                                         uint32_t /* Out */ StrPtr, uint32_t /* Out */ StrLenPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if(MemInst == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Str = MemInst->getPointer<char*>(StrPtr);
+  if(Str == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *StrLen = MemInst->getPointer<uint32_t*>(StrLenPtr);
+  if(StrLen == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  std::string S = std::to_string(Value);
+  std::copy(S.begin(), S.end(), Str);
+  *StrLen = S.size();
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiStringToFloat::body(const Runtime::CallingFrame &Frame,
+                                         uint32_t StrPtr, uint32_t StrLen,
+                                         uint32_t /* Out */ ResultPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if(MemInst == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Str = MemInst->getSpan<char>(StrPtr, StrLen);
+  if(Str.size() != StrLen){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Result = MemInst->getPointer<float_t*>(ResultPtr);
+  if(Result == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  *Result = std::stof(std::string(Str.data(), Str.size()));
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiStringFromFloat::body(const Runtime::CallingFrame &Frame,
+                                           float_t Value,
+                                           uint32_t /* Out */ StrPtr,uint32_t /* Out */ StrLenPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if(MemInst == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Str = MemInst->getPointer<char*>(StrPtr);
+  if(Str == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *StrLen = MemInst->getPointer<uint32_t*>(StrLenPtr);
+  if(StrLen == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  std::string S = std::to_string(Value);
+  std::copy(S.begin(), S.end(), Str);
+  *StrLen = S.size();
+  return __WASI_ERRNO_SUCCESS;
+}
+Expect<uint32_t> WasiStringInsert::body(const Runtime::CallingFrame &Frame,
+                                        uint32_t StrPtr, uint32_t StrLen,
+                                        uint32_t Index, uint32_t InsertPtr,
+                                        uint32_t InsertLen,
+                                        uint32_t /* Out */ ResultPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if(MemInst == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Str = MemInst->getSpan<char>(StrPtr, StrLen);
+  if(Str.size() != StrLen){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Insert = MemInst->getSpan<char>(InsertPtr, InsertLen);
+  if(Insert.size() != InsertLen){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Result = MemInst->getPointer<uint8_t*>(ResultPtr);
+  if(Result == nullptr){
+    return __WASI_ERRNO_FAULT;
+  }
+
+  std::string S = std::string(Str.data(), Str.size());
+  S.insert(Index, Insert.data(), Insert.size());
+  std::copy(S.begin(), S.end(), Result);
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiStringSlices::body(const Runtime::CallingFrame &Frame,
+                                        uint32_t StrPtr, uint32_t StrLen,
+                                        uint32_t Start, uint32_t Len,
+                                        uint32_t /* Out */ ResultPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if(MemInst == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Str = MemInst->getSpan<char>(StrPtr, StrLen);
+  if (Str.size() != StrLen) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Result = MemInst->getPointer<uint8_t*>(ResultPtr);
+  if(Result == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  std::string S = std::string(Str.data(), Str.size());
+  S = S.substr(Start, Len);
+  std::copy(S.begin(), S.end(), Result);
+  return __WASI_ERRNO_SUCCESS;
+}
+
+
+Expect<uint32_t> WasiStringFindSubstring::body(const Runtime::CallingFrame &Frame,
+                                             uint32_t StrPtr, uint32_t StrLen,
+                                             uint32_t SubStrPtr,
+                                             uint32_t SubStrLen,
+                                             uint32_t /* Out */ ResultPtr) {
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if (MemInst == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Str = MemInst->getSpan<char>(StrPtr, StrLen);
+  if (Str.size() != StrLen) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto SubStr = MemInst->getSpan<char>(SubStrPtr, SubStrLen);
+  if (SubStr.size() != SubStrLen) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Result = MemInst->getPointer<uint32_t*>(ResultPtr);
+  if (Result == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  std::string S = std::string(Str.data(), Str.size());
+  std::string SubS = std::string(SubStr.data(), SubStr.size());
+  *Result = Wasmedge::StringFunc::findSubString(Str.data(), StrLen,
+                                                SubStr.data(), SubStrLen);
+  return __WASI_ERRNO_SUCCESS;
+}
+
+Expect<uint32_t> WasiStringRFindSubstring::body (const Runtime::CallingFrame &Frame, uint32_t StrPtr,
+                      uint32_t StrLen, uint32_t SubStrPtr, uint32_t SubStrLen,
+                      uint32_t /* Out */ ResultPtr){
+  auto *MemInst = Frame.getMemoryByIndex(0);
+  if (MemInst == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto Str = MemInst->getSpan<char>(StrPtr, StrLen);
+  if (Str.size() != StrLen) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto SubStr = MemInst->getSpan<char>(SubStrPtr, SubStrLen);
+  if (SubStr.size() != SubStrLen) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  auto *Result = MemInst->getPointer<uint8_t*>(ResultPtr);
+  if (Result == nullptr) {
+    return __WASI_ERRNO_FAULT;
+  }
+
+  std::string S = std::string(Str.data(), Str.size());
+  std::string SubS = std::string(SubStr.data(), SubStr.size());
+  *Result = S.rfind(SubS);
   return __WASI_ERRNO_SUCCESS;
 }
 } // namespace Host

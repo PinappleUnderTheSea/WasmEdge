@@ -1,0 +1,76 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/api/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 137,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/api/libwasmedge.so.0.1.0",
+				"lib/api/libwasmedge.so.0"
+			],
+			"targetId" : "wasmedge_shared::@1824546d6e30cc28d2dd",
+			"targetIndex" : 21,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/api/libwasmedge.so"
+			],
+			"targetId" : "wasmedge_shared::@1824546d6e30cc28d2dd",
+			"targetIndex" : 21,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/wasmedge",
+			"paths" : 
+			[
+				"lib/api/../../include/api/wasmedge/wasmedge.h",
+				"cmake-build-release-wsl/lib/api/../../include/api/wasmedge/version.h",
+				"cmake-build-release-wsl/lib/api/../../include/api/wasmedge/enum.inc",
+				"cmake-build-release-wsl/lib/api/../../include/api/wasmedge/enum_configure.h",
+				"cmake-build-release-wsl/lib/api/../../include/api/wasmedge/enum_errcode.h",
+				"cmake-build-release-wsl/lib/api/../../include/api/wasmedge/enum_types.h",
+				"lib/api/../../include/api/wasmedge/int128.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/api",
+		"source" : "lib/api"
+	}
+}

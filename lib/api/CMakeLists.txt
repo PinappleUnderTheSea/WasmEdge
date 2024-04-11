@@ -183,7 +183,8 @@ if(WASMEDGE_BUILD_STATIC_LIB)
   endif()
 
   add_custom_target(wasmedge_static_target ALL DEPENDS "libwasmedge.a")
-  add_library(wasmedge_static STATIC IMPORTED GLOBAL)
+  add_library(wasmedge_static STATIC IMPORTED GLOBAL
+          ../../include/common/String.h)
   add_dependencies(wasmedge_static wasmedge_static_target)
 
   set_target_properties(wasmedge_static

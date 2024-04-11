@@ -593,5 +593,139 @@ public:
                         uint32_t AddressPtr, uint32_t PortPtr);
 };
 
+class WasiStringCount : public Wasi<WasiStringCount>{
+public:
+  WasiStringCount(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame,
+                        uint32_t /* Out */ CountPtr);
+
+};
+
+class WasiStringStore : public Wasi<WasiStringStore>{
+public:
+  WasiStringStore(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame,
+                        uint32_t DataPtr, uint32_t DataLen,
+                        uint32_t /* Out */ IndexPtr);
+};
+
+class WasiStringLoad : public Wasi<WasiStringLoad> {
+public:
+  WasiStringLoad(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame,
+                        uint32_t Index, uint32_t /* Out */ DataPtr,
+                        uint32_t /* Out */ DataLenPtr);
+};
+
+class WasiStringConcat : public Wasi<WasiStringConcat>{
+public:
+  WasiStringConcat(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t Path1Ptr,
+                        uint32_t Path1Len, uint32_t Path2Ptr, uint32_t Path2Len,
+                        uint32_t /* Out */ PathPtr, uint32_t /* Out */ LenPtr);
+};
+
+class WasiGetStringLenByIndex : public Wasi<WasiGetStringLenByIndex>{
+public:
+  WasiGetStringLenByIndex(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t Index,
+                        uint32_t /* Out */ LenPtr);
+};
+
+class WasiStringDeleteByIndex: public Wasi<WasiStringDeleteByIndex>{
+public:
+  WasiStringDeleteByIndex(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t Index);
+};
+
+class WasiStringCompareByIndex: public Wasi<WasiStringCompareByIndex>{
+public:
+  WasiStringCompareByIndex(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t Index1,
+                        uint32_t Index2,
+                        uint32_t /* Out */ ResultPtr);
+};
+
+class WasiStringCompare: public Wasi<WasiStringCompare>{
+public:
+  WasiStringCompare(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t Str1Ptr,
+                        uint32_t Str1Len, uint32_t Str2Ptr, uint32_t Str2Len,
+                        uint32_t /* Out */ ResultPtr);
+
+};
+
+class WasiStringSetValue: public Wasi<WasiStringSetValue>{
+public:
+  WasiStringSetValue(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t Str1Ptr,
+                        uint32_t Str1Len, uint32_t Index);
+};
+
+class WasiStringToInt: public Wasi<WasiStringToInt>{
+public:
+  WasiStringToInt(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t StrPtr,
+                                uint32_t StrLen, uint32_t /* Out */ ResultPtr);
+};
+
+class WasiStringFromInt: public Wasi<WasiStringFromInt>{
+public:
+  WasiStringFromInt(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, int32_t Value,
+                                uint32_t /* Out */ StrPtr, uint32_t /* Out */ StrLenPtr);
+};
+
+class WasiStringToFloat: public Wasi<WasiStringToFloat>{
+public:
+  WasiStringToFloat(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t StrPtr,
+                                uint32_t StrLen, uint32_t /* Out */ ResultPtr);
+};
+
+class WasiStringFromFloat: public Wasi<WasiStringFromFloat>{
+public:
+  WasiStringFromFloat(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, float_t Value,
+                                uint32_t /* Out */ StrPtr, uint32_t /* Out */ StrLenPtr);
+};
+
+class WasiStringInsert : public Wasi<WasiStringInsert>{
+public:
+  WasiStringInsert(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t StrPtr,
+                                uint32_t StrLen, uint32_t Index, uint32_t InsertPtr,
+                                uint32_t InsertLen, uint32_t /* Out */ ResultPtr);
+
+};
+
+class WasiStringSlices : public Wasi<WasiStringSlices>{
+public:
+  WasiStringSlices(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t StrPtr,
+                                uint32_t StrLen, uint32_t Start, uint32_t Len,
+                                uint32_t /* Out */ ResultPtr);
+
+};
+
+class WasiStringFindSubstring : public Wasi<WasiStringFindSubstring>{
+public:
+  WasiStringFindSubstring(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t StrPtr,
+                                uint32_t StrLen, uint32_t SubStrPtr, uint32_t SubStrLen,
+                                uint32_t /* Out */ ResultPtr);
+};
+
+class WasiStringRFindSubstring : public Wasi<WasiStringRFindSubstring>{
+public:
+  WasiStringRFindSubstring(WASI::Environ &HostEnv) : Wasi(HostEnv){}
+  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t StrPtr,
+                        uint32_t StrLen, uint32_t SubStrPtr, uint32_t SubStrLen,
+                        uint32_t /* Out */ ResultPtr);
+};
 } // namespace Host
 } // namespace WasmEdge

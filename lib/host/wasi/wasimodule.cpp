@@ -63,6 +63,12 @@ WasiModule::WasiModule() : ModuleInstance("wasi_snapshot_preview1") {
   addHostFunc("proc_raise", std::make_unique<WasiProcRaise>(Env));
   addHostFunc("sched_yield", std::make_unique<WasiSchedYield>(Env));
   addHostFunc("random_get", std::make_unique<WasiRandomGet>(Env));
+
+  // zjj add some functions about string
+  // use the ptr in other class first, then move it into HostFunc
+  addHostFunc("string_concat", std::make_unique<WasiStringConcat>(Env));
+  addHostFunc("string_new", std::make_unique<WasiStringStore>(Env));
+
   // To make the socket API compatible with the old oneit p
   // we will duplicate all the API to V1 and V2.
   // The V1 presents the original behavior before 0.12 release.

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FMT"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-release-wsl\;CMake Files\cmake-build-release-wsl\_deps\;CMake Files\cmake-build-release-wsl\_deps\fmt-src\;CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\;CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\cmake\;CMake Files\cmake-build-release-wsl\_deps\spdlog-src\;CMake Files\cmake-build-release-wsl\_deps\spdlog-src\cmake\;CMake Files\cmake\;CMake Files\include\;CMake Files\include\api\;CMake Files\include\api\wasmedge\;CMake Files\include\common\;CMake Files\lib\;CMake Files\lib\aot\;CMake Files\lib\llvm\;CMake Files\lib\common\;CMake Files\lib\system\;CMake Files\lib\plugin\;CMake Files\lib\po\;CMake Files\lib\loader\;CMake Files\lib\validator\;CMake Files\lib\executor\;CMake Files\lib\host\;CMake Files\lib\host\wasi\;CMake Files\lib\vm\;CMake Files\lib\driver\;CMake Files\lib\api\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\llvm-12\;CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\;CMake Files\..\..\..\..\usr\lib\llvm-12\lib\;CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\;CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\llvm\;CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\lld\;CMake Files\plugins\;CMake Files\thirdparty\;CMake Files\thirdparty\blake3\;CMake Files\tools\;CMake Files\tools\wasmedge\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fmt">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/libfmt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 fmt"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fmt/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/libfmt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 fmt/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/ChangeLog.md">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/README.md">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/args.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/chrono.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/color.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/compile.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/core.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/format-inl.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/format.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/os.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/ostream.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/printf.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/ranges.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/std.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/xchar.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/src/format.cc">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/src/os.cc">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\fmt-src\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/support/cmake/JoinPaths.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/support/cmake/fmt-config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/support/cmake/fmt.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\spdlog-src\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/cmake/ide.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\spdlog-src\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/cmake/utils.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\spdlog-src\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake/FindFilesystem.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake/Helper.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\include\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/api/wasmedge/int128.h">
+			<Option virtualFolder="CMake Files\include\api\wasmedge\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/api/wasmedge/version.h.in">
+			<Option virtualFolder="CMake Files\include\api\wasmedge\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/api/wasmedge/wasmedge.h">
+			<Option virtualFolder="CMake Files\include\api\wasmedge\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/config.h.in">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/enum.inc">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/enum_configure.h">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/enum_errcode.h">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/enum_types.h">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/version.h.in">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/aot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\aot\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\llvm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/system/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\system\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/plugin/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\plugin\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/po/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\po\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\loader\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/validator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\validator\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\executor\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\host\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\host\wasi\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/vm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\vm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/driver/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\driver\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/api/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\api\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/AddLLVM.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/DetermineGCCCompatible.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/LLVMConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/LLVMConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/LLVMProcessSources.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/llvm/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/llvm/LLVMExports-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/llvm/LLVMExports.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/lld/LLDConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\lld\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/lld/LLDTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\lld\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/lld/LLDTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\lld\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/plugins/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\plugins\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\blake3\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/tools/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tools\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/tools/wasmedge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tools\wasmedge\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

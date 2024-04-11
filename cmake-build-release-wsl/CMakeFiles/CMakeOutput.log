@@ -586,3 +586,9 @@ gmake[1]: Leaving directory '/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-
 
 Source file was:
 int main(){}
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+

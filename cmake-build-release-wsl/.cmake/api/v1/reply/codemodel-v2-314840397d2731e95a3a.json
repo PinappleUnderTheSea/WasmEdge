@@ -1,0 +1,655 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						19,
+						20,
+						22
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "include",
+					"jsonFile" : "directory-include-Release-7ead17b99bffc88b66bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "include"
+				},
+				{
+					"build" : "lib",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						16,
+						17,
+						18
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib-Release-c12f15c6f888b43a891c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib"
+				},
+				{
+					"build" : "lib/aot",
+					"jsonFile" : "directory-lib.aot-Release-45e7130e4b120bf03364.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/aot",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "lib/llvm",
+					"jsonFile" : "directory-lib.llvm-Release-e0a452ced6a6605096e0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/llvm",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						13
+					]
+				},
+				{
+					"build" : "lib/common",
+					"childIndexes" : 
+					[
+						6,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.common-Release-00228c46432c4f9e0602.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/common",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "_deps/fmt-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.fmt-build-Release-db017c184eb0684dee4c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 1,
+					"source" : "cmake-build-release-wsl/_deps/fmt-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "_deps/spdlog-build",
+					"jsonFile" : "directory-_deps.spdlog-build-Release-1d83552337867ebca702.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "cmake-build-release-wsl/_deps/spdlog-src",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "lib/system",
+					"jsonFile" : "directory-lib.system-Release-ddb764181fdd0a4839e9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/system",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "lib/plugin",
+					"jsonFile" : "directory-lib.plugin-Release-1c0489e93a90d0a3c2fd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/plugin",
+					"targetIndexes" : 
+					[
+						17
+					]
+				},
+				{
+					"build" : "lib/po",
+					"jsonFile" : "directory-lib.po-Release-81407b776ebc245b7ed6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/po",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "lib/loader",
+					"jsonFile" : "directory-lib.loader-Release-e5749d8f8a2ba342448b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/loader",
+					"targetIndexes" : 
+					[
+						14,
+						15
+					]
+				},
+				{
+					"build" : "lib/validator",
+					"jsonFile" : "directory-lib.validator-Release-c19144bff2f8e66c5fe4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/validator",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "lib/executor",
+					"jsonFile" : "directory-lib.executor-Release-bd5f24e9879da3be6cf7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/executor",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "lib/host",
+					"childIndexes" : 
+					[
+						15
+					],
+					"jsonFile" : "directory-lib.host-Release-d22695211f260214ea57.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/host"
+				},
+				{
+					"build" : "lib/host/wasi",
+					"jsonFile" : "directory-lib.host.wasi-Release-b6d576613ab432790b1b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "lib/host/wasi",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "lib/vm",
+					"jsonFile" : "directory-lib.vm-Release-fc69b41e44475c5af43f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/vm",
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"build" : "lib/driver",
+					"jsonFile" : "directory-lib.driver-Release-ff973e68956662a3dd48.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/driver",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "lib/api",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-lib.api-Release-a9701d116bc84838939e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "lib/api",
+					"targetIndexes" : 
+					[
+						8,
+						21
+					]
+				},
+				{
+					"build" : "plugins",
+					"jsonFile" : "directory-plugins-Release-55275e3f2f02dcd473ff.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "plugins"
+				},
+				{
+					"build" : "thirdparty",
+					"childIndexes" : 
+					[
+						21
+					],
+					"jsonFile" : "directory-thirdparty-Release-ca18efa0333c95a683e3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "thirdparty"
+				},
+				{
+					"build" : "thirdparty/blake3",
+					"jsonFile" : "directory-thirdparty.blake3-Release-994cfbbad766536c62c9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "thirdparty/blake3",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "tools",
+					"childIndexes" : 
+					[
+						23
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tools-Release-f9645b0170a45a75eff2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tools"
+				},
+				{
+					"build" : "tools/wasmedge",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tools.wasmedge-Release-1fc32e35596ec49b0282.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 22,
+					"projectIndex" : 0,
+					"source" : "tools/wasmedge",
+					"targetIndexes" : 
+					[
+						6,
+						22
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					],
+					"name" : "WasmEdge",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "FMT",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "spdlog",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "acc_gen::@804cc49b0bbb46e631d4",
+					"jsonFile" : "target-acc_gen-Release-58198c3744f17dca5371.json",
+					"name" : "acc_gen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "fmt::@976f4f0bee90b99ecdb6",
+					"jsonFile" : "target-fmt-Release-46ed39577929970a2d83.json",
+					"name" : "fmt",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "intrinsics_gen::@804cc49b0bbb46e631d4",
+					"jsonFile" : "target-intrinsics_gen-Release-58504f745757856b0030.json",
+					"name" : "intrinsics_gen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "omp_gen::@804cc49b0bbb46e631d4",
+					"jsonFile" : "target-omp_gen-Release-dedd0f5c1ec95044fa91.json",
+					"name" : "omp_gen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "spdlog::@eb35cfce7893ccfeff1e",
+					"jsonFile" : "target-spdlog-Release-0b796c0955c62c9a6c5b.json",
+					"name" : "spdlog",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "utilBlake3::@5e77e68abdc776bea2a5",
+					"jsonFile" : "target-utilBlake3-Release-f157594b282e0653d903.json",
+					"name" : "utilBlake3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "wasmedge::@10aee0321a6d2392b934",
+					"jsonFile" : "target-wasmedge-Release-b3ea5a9b90ece2460e2c.json",
+					"name" : "wasmedge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "wasmedgeAOT::@9627ef982d47d111c851",
+					"jsonFile" : "target-wasmedgeAOT-Release-b1f8c3e8d3527ba2663e.json",
+					"name" : "wasmedgeAOT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "wasmedgeCAPI::@1824546d6e30cc28d2dd",
+					"jsonFile" : "target-wasmedgeCAPI-Release-d499ad00a3daac8de8c4.json",
+					"name" : "wasmedgeCAPI",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "wasmedgeCommon::@9fc5b58572d5f236116a",
+					"jsonFile" : "target-wasmedgeCommon-Release-275c27521114505f2761.json",
+					"name" : "wasmedgeCommon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "wasmedgeDriver::@7503c8a1fc2f43972847",
+					"jsonFile" : "target-wasmedgeDriver-Release-968d139dd15836f774b0.json",
+					"name" : "wasmedgeDriver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "wasmedgeExecutor::@21d3940988011cd9f928",
+					"jsonFile" : "target-wasmedgeExecutor-Release-0b6322bf0bbbf8bc3d5b.json",
+					"name" : "wasmedgeExecutor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "wasmedgeHostModuleWasi::@f9a3b04a2957e7897ad2",
+					"jsonFile" : "target-wasmedgeHostModuleWasi-Release-0d343e7c07cce848f3d2.json",
+					"name" : "wasmedgeHostModuleWasi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "wasmedgeLLVM::@804cc49b0bbb46e631d4",
+					"jsonFile" : "target-wasmedgeLLVM-Release-b8d31710d1b37dc6aeb9.json",
+					"name" : "wasmedgeLLVM",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "wasmedgeLoader::@e1a391c9e31d76ac6e69",
+					"jsonFile" : "target-wasmedgeLoader-Release-25071b2ae1fab94f25d8.json",
+					"name" : "wasmedgeLoader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "wasmedgeLoaderFileMgr::@e1a391c9e31d76ac6e69",
+					"jsonFile" : "target-wasmedgeLoaderFileMgr-Release-87919b6c25437f98749c.json",
+					"name" : "wasmedgeLoaderFileMgr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "wasmedgePO::@ce22c4cec992ec683e95",
+					"jsonFile" : "target-wasmedgePO-Release-28f3ae1d9b87c7a07269.json",
+					"name" : "wasmedgePO",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "wasmedgePlugin::@057d9b90ed52cdf7cb28",
+					"jsonFile" : "target-wasmedgePlugin-Release-3e49186f5635be4d1c12.json",
+					"name" : "wasmedgePlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "wasmedgeSystem::@e0c788fd8d2fe6013071",
+					"jsonFile" : "target-wasmedgeSystem-Release-4ea9d429af4d2fd3292c.json",
+					"name" : "wasmedgeSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "wasmedgeVM::@b4155ff98f8ab34f07b7",
+					"jsonFile" : "target-wasmedgeVM-Release-f5c02b63dfe5b0c7628d.json",
+					"name" : "wasmedgeVM",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "wasmedgeValidator::@2f6a3be93f8d94f4c9aa",
+					"jsonFile" : "target-wasmedgeValidator-Release-329f6d6ef865e728d11c.json",
+					"name" : "wasmedgeValidator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "wasmedge_shared::@1824546d6e30cc28d2dd",
+					"jsonFile" : "target-wasmedge_shared-Release-72e9a7dcc9fe62437d28.json",
+					"name" : "wasmedge_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "wasmedgec::@10aee0321a6d2392b934",
+					"jsonFile" : "target-wasmedgec-Release-f61799d4f86b51bca95b.json",
+					"name" : "wasmedgec",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl",
+		"source" : "/mnt/f/CanNotGraduate/WasmEdge"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

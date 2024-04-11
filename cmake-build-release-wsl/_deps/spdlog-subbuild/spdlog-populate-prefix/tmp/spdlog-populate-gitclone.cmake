@@ -32,12 +32,12 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "/usr/bin/git"  checkout v1.11.0 --
+  COMMAND "/usr/bin/git"  checkout v1.13.0 --
   WORKING_DIRECTORY "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'v1.11.0'")
+  message(FATAL_ERROR "Failed to checkout tag: 'v1.13.0'")
 endif()
 
 set(init_submodules TRUE)

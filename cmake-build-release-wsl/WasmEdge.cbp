@@ -1,0 +1,2091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="WasmEdge"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-release-wsl\;CMake Files\cmake-build-release-wsl\_deps\;CMake Files\cmake-build-release-wsl\_deps\fmt-src\;CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\;CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\cmake\;CMake Files\cmake-build-release-wsl\_deps\spdlog-src\;CMake Files\cmake-build-release-wsl\_deps\spdlog-src\cmake\;CMake Files\cmake\;CMake Files\include\;CMake Files\include\api\;CMake Files\include\api\wasmedge\;CMake Files\include\common\;CMake Files\lib\;CMake Files\lib\aot\;CMake Files\lib\llvm\;CMake Files\lib\common\;CMake Files\lib\system\;CMake Files\lib\plugin\;CMake Files\lib\po\;CMake Files\lib\loader\;CMake Files\lib\validator\;CMake Files\lib\executor\;CMake Files\lib\host\;CMake Files\lib\host\wasi\;CMake Files\lib\vm\;CMake Files\lib\driver\;CMake Files\lib\api\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\llvm-12\;CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\;CMake Files\..\..\..\..\usr\lib\llvm-12\lib\;CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\;CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\llvm\;CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\lld\;CMake Files\plugins\;CMake Files\thirdparty\;CMake Files\thirdparty\blake3\;CMake Files\tools\;CMake Files\tools\wasmedge\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeAOT">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/libwasmedgeAOT.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/Makefile&quot;  VERBOSE=1 wasmedgeAOT"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeAOT/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/libwasmedgeAOT.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/Makefile&quot;  VERBOSE=1 wasmedgeAOT/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="intrinsics_gen">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 intrinsics_gen"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp_gen">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 omp_gen"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="acc_gen">
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 acc_gen"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeLLVM">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/libwasmedgeLLVM.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/lib/llvm-12/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 wasmedgeLLVM"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeLLVM/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/libwasmedgeLLVM.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/lib/llvm-12/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 wasmedgeLLVM/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeCommon">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/libwasmedgeCommon.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/Makefile&quot;  VERBOSE=1 wasmedgeCommon"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeCommon/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/libwasmedgeCommon.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/Makefile&quot;  VERBOSE=1 wasmedgeCommon/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fmt">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/libfmt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 fmt"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fmt/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/libfmt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 fmt/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spdlog">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/libspdlog.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/Makefile&quot;  VERBOSE=1 spdlog"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spdlog/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/libspdlog.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/Makefile&quot;  VERBOSE=1 spdlog/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeSystem">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/libwasmedgeSystem.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/Makefile&quot;  VERBOSE=1 wasmedgeSystem"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeSystem/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/libwasmedgeSystem.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/Makefile&quot;  VERBOSE=1 wasmedgeSystem/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgePlugin">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/libwasmedgePlugin.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/Makefile&quot;  VERBOSE=1 wasmedgePlugin"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgePlugin/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/libwasmedgePlugin.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/Makefile&quot;  VERBOSE=1 wasmedgePlugin/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgePO">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/libwasmedgePO.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/Makefile&quot;  VERBOSE=1 wasmedgePO"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgePO/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/libwasmedgePO.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/Makefile&quot;  VERBOSE=1 wasmedgePO/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeLoaderFileMgr">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/libwasmedgeLoaderFileMgr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 wasmedgeLoaderFileMgr"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeLoaderFileMgr/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/libwasmedgeLoaderFileMgr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 wasmedgeLoaderFileMgr/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeLoader">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/libwasmedgeLoader.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 wasmedgeLoader"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeLoader/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/libwasmedgeLoader.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 wasmedgeLoader/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeValidator">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/libwasmedgeValidator.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/Makefile&quot;  VERBOSE=1 wasmedgeValidator"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeValidator/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/libwasmedgeValidator.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/Makefile&quot;  VERBOSE=1 wasmedgeValidator/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeExecutor">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/libwasmedgeExecutor.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/Makefile&quot;  VERBOSE=1 wasmedgeExecutor"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeExecutor/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/libwasmedgeExecutor.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/Makefile&quot;  VERBOSE=1 wasmedgeExecutor/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeHostModuleWasi">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/libwasmedgeHostModuleWasi.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/Makefile&quot;  VERBOSE=1 wasmedgeHostModuleWasi"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeHostModuleWasi/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/libwasmedgeHostModuleWasi.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/Makefile&quot;  VERBOSE=1 wasmedgeHostModuleWasi/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeVM">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/libwasmedgeVM.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWASMEDGE_USE_LLVM"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/Makefile&quot;  VERBOSE=1 wasmedgeVM"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeVM/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/libwasmedgeVM.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWASMEDGE_USE_LLVM"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/Makefile&quot;  VERBOSE=1 wasmedgeVM/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeDriver">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/libwasmedgeDriver.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWASMEDGE_USE_LLVM"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/Makefile&quot;  VERBOSE=1 wasmedgeDriver"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeDriver/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/libwasmedgeDriver.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWASMEDGE_USE_LLVM"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/Makefile&quot;  VERBOSE=1 wasmedgeDriver/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeCAPI">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/CMakeFiles/wasmedgeCAPI.dir/wasmedgeCAPI.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWASMEDGE_COMPILE_LIBRARY"/>
+					<Add option="-DWASMEDGE_USE_LLVM"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 wasmedgeCAPI"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgeCAPI/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/CMakeFiles/wasmedgeCAPI.dir/wasmedgeCAPI.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWASMEDGE_COMPILE_LIBRARY"/>
+					<Add option="-DWASMEDGE_USE_LLVM"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 wasmedgeCAPI/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedge_shared">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/libwasmedge.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWASMEDGE_COMPILE_LIBRARY"/>
+					<Add option="-DWASMEDGE_USE_LLVM"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 wasmedge_shared"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedge_shared/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/libwasmedge.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWASMEDGE_COMPILE_LIBRARY"/>
+					<Add option="-DWASMEDGE_USE_LLVM"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 wasmedge_shared/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="utilBlake3">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/libutilBlake3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/Makefile&quot;  VERBOSE=1 utilBlake3"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="utilBlake3/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/libutilBlake3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/Makefile&quot;  VERBOSE=1 utilBlake3/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgec">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/wasmedgec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 wasmedgec"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedgec/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/wasmedgec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 wasmedgec/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedge">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/wasmedge" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 wasmedge"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wasmedge/fast">
+				<Option output="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/wasmedge" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add option="-DSPDLOG_FMT_EXTERNAL"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/include/api"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include"/>
+					<Add directory="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 wasmedge/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/ChangeLog.md">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/README.md">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/args.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/chrono.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/color.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/compile.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/core.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/format-inl.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/format.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/os.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/ostream.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/printf.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/ranges.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/std.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include/fmt/xchar.h">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/src/format.cc">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/src/os.cc">
+			<Option target="fmt"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/async.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/async_logger-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/async_logger.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/common-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/common.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/backtracer-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/backtracer.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/circular_q.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/console_globals.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/file_helper-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/file_helper.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/fmt_helper.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/log_msg-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/log_msg.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/log_msg_buffer-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/log_msg_buffer.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/mpmc_blocking_q.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/null_mutex.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/os-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/os.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/periodic_worker-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/periodic_worker.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/registry-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/registry.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/synchronous_factory.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/tcp_client-windows.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/tcp_client.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/thread_pool-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/thread_pool.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/udp_client-windows.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/udp_client.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/details/windows_include.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bin_to_hex.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/args.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/chrono.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/color.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/compile.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/core.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/format-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/format.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/locale.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/os.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/ostream.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/printf.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/ranges.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/std.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/bundled/xchar.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/chrono.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/compile.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/fmt.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/ostr.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/ranges.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/std.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fmt/xchar.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/formatter.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/fwd.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/logger-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/logger.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/pattern_formatter-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/pattern_formatter.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/android_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/ansicolor_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/ansicolor_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/base_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/base_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/basic_file_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/basic_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/callback_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/daily_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/dist_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/dup_filter_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/hourly_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/kafka_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/mongo_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/msvc_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/null_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/ostream_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/qt_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/ringbuffer_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/rotating_file_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/rotating_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/stdout_color_sinks-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/stdout_color_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/stdout_sinks-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/stdout_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/syslog_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/systemd_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/tcp_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/udp_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/win_eventlog_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/wincolor_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/sinks/wincolor_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/spdlog-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/spdlog.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/stopwatch.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/tweakme.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include/spdlog/version.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/async.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/cfg.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/color_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/file_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/spdlog.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/stdout_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api/CMakeFiles/wasmedgeCAPI.dir/wasmedge.cpp.o">
+			<Option target="wasmedge_shared"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/api/wasmedge/wasmedge.h">
+			<Option target="wasmedge_shared"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/aot/blake3.cpp">
+			<Option target="wasmedgeAOT"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/aot/cache.cpp">
+			<Option target="wasmedgeAOT"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/api/wasmedge.cpp">
+			<Option target="wasmedgeCAPI"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/common/errinfo.cpp">
+			<Option target="wasmedgeCommon"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/common/hexstr.cpp">
+			<Option target="wasmedgeCommon"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/common/int128.cpp">
+			<Option target="wasmedgeCommon"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/common/log.cpp">
+			<Option target="wasmedgeCommon"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/driver/compilerTool.cpp">
+			<Option target="wasmedgeDriver"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/driver/fuzzPO.cpp">
+			<Option target="wasmedgeDriver"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/driver/fuzzTool.cpp">
+			<Option target="wasmedgeDriver"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/driver/runtimeTool.cpp">
+			<Option target="wasmedgeDriver"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/driver/uniTool.cpp">
+			<Option target="wasmedgeDriver"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/controlInstr.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/engine.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/memoryInstr.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/proxy.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/refInstr.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/tableInstr.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/threadInstr.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/variableInstr.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/executor.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/helper.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/data.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/elem.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/export.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/function.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/global.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/import.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/memory.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/module.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/table.cpp">
+			<Option target="wasmedgeExecutor"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/clock-linux.cpp">
+			<Option target="wasmedgeHostModuleWasi"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/environ-linux.cpp">
+			<Option target="wasmedgeHostModuleWasi"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/environ.cpp">
+			<Option target="wasmedgeHostModuleWasi"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/inode-linux.cpp">
+			<Option target="wasmedgeHostModuleWasi"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/vinode.cpp">
+			<Option target="wasmedgeHostModuleWasi"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/wasifunc.cpp">
+			<Option target="wasmedgeHostModuleWasi"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/wasimodule.cpp">
+			<Option target="wasmedgeHostModuleWasi"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/codegen.cpp">
+			<Option target="wasmedgeLLVM"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/compiler.cpp">
+			<Option target="wasmedgeLLVM"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/data.cpp">
+			<Option target="wasmedgeLLVM"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/data.h">
+			<Option target="wasmedgeLLVM"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/jit.cpp">
+			<Option target="wasmedgeLLVM"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/llvm.h">
+			<Option target="wasmedgeLLVM"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/aot_section.cpp">
+			<Option target="wasmedgeLoaderFileMgr"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/alias.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/canonical.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/import_export.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/instance.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/sort.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/start.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/type.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/description.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/expression.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/instruction.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/module.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/section.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/segment.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/type.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/filemgr.cpp">
+			<Option target="wasmedgeLoaderFileMgr"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/loader.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_description.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_expression.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_instruction.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_module.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_section.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_segment.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_type.cpp">
+			<Option target="wasmedgeLoader"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/shared_library.cpp">
+			<Option target="wasmedgeLoaderFileMgr"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/plugin/plugin.cpp">
+			<Option target="wasmedgePlugin"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/po/argument_parser.cpp">
+			<Option target="wasmedgePO"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/system/allocator.cpp">
+			<Option target="wasmedgeSystem"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/system/fault.cpp">
+			<Option target="wasmedgeSystem"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/system/mmap.cpp">
+			<Option target="wasmedgeSystem"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/system/path.cpp">
+			<Option target="wasmedgeSystem"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/validator/formchecker.cpp">
+			<Option target="wasmedgeValidator"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/validator/validator.cpp">
+			<Option target="wasmedgeValidator"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/vm/vm.cpp">
+			<Option target="wasmedgeVM"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3.c">
+			<Option target="utilBlake3"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3.h">
+			<Option target="utilBlake3"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_avx2_x86-64_unix.S">
+			<Option target="utilBlake3"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_avx512_x86-64_unix.S">
+			<Option target="utilBlake3"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_dispatch.c">
+			<Option target="utilBlake3"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_portable.c">
+			<Option target="utilBlake3"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_sse2_x86-64_unix.S">
+			<Option target="utilBlake3"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_sse41_x86-64_unix.S">
+			<Option target="utilBlake3"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/tools/wasmedge/wasmedge.cpp">
+			<Option target="wasmedge"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/tools/wasmedge/wasmedgec.cpp">
+			<Option target="wasmedgec"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\fmt-src\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/support/cmake/JoinPaths.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/support/cmake/fmt-config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/support/cmake/fmt.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\fmt-src\support\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\spdlog-src\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/cmake/ide.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\spdlog-src\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/cmake/utils.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release-wsl\_deps\spdlog-src\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake/FindFilesystem.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/cmake/Helper.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\include\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/api/wasmedge/int128.h">
+			<Option virtualFolder="CMake Files\include\api\wasmedge\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/api/wasmedge/version.h.in">
+			<Option virtualFolder="CMake Files\include\api\wasmedge\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/api/wasmedge/wasmedge.h">
+			<Option virtualFolder="CMake Files\include\api\wasmedge\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/config.h.in">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/enum.inc">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/enum_configure.h">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/enum_errcode.h">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/enum_types.h">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/include/common/version.h.in">
+			<Option virtualFolder="CMake Files\include\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/aot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\aot\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\llvm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\common\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/system/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\system\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/plugin/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\plugin\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/po/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\po\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/loader/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\loader\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/validator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\validator\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/executor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\executor\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\host\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\host\wasi\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/vm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\vm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/driver/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\driver\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/lib/api/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\api\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/AddLLVM.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/DetermineGCCCompatible.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/LLVMConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/LLVMConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/cmake/LLVMProcessSources.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/llvm/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/llvm/LLVMExports-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/llvm/LLVMExports.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/lld/LLDConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\lld\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/lld/LLDTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\lld\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/../../../../usr/lib/llvm-12/lib/cmake/lld/LLDTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\llvm-12\lib\cmake\lld\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/plugins/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\plugins\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\blake3\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/tools/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tools\"/>
+		</Unit>
+		<Unit filename="/mnt/f/CanNotGraduate/WasmEdge/tools/wasmedge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tools\wasmedge\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

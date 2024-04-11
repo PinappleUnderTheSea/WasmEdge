@@ -1,0 +1,472 @@
+[
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeAOT.dir/blake3.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/aot/blake3.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/aot/blake3.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/aot",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeAOT.dir/cache.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/aot/cache.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/aot/cache.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -isystem /usr/lib/llvm-12/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden  -fno-exceptions -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLLVM.dir/compiler.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/llvm/compiler.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/compiler.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -isystem /usr/lib/llvm-12/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden  -fno-exceptions -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLLVM.dir/codegen.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/llvm/codegen.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/codegen.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -isystem /usr/lib/llvm-12/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden  -fno-exceptions -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLLVM.dir/data.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/llvm/data.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/data.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/llvm",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -isystem /usr/lib/llvm-12/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden  -fno-exceptions -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLLVM.dir/jit.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/llvm/jit.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/llvm/jit.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeCommon.dir/hexstr.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/common/hexstr.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/common/hexstr.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeCommon.dir/log.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/common/log.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/common/log.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeCommon.dir/errinfo.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/common/errinfo.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/common/errinfo.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/common",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeCommon.dir/int128.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/common/int128.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/common/int128.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build",
+  "command": "/usr/bin/c++  -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -std=c++17 -o CMakeFiles/fmt.dir/src/format.cc.o -c /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/src/format.cc",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/src/format.cc"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-build",
+  "command": "/usr/bin/c++  -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -std=c++17 -o CMakeFiles/fmt.dir/src/os.cc.o -c /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/src/os.cc",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/src/os.cc"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/spdlog.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/spdlog.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/stdout_sinks.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/stdout_sinks.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/color_sinks.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/color_sinks.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/file_sinks.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/file_sinks.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/spdlog.dir/src/async.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/async.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/async.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-build",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/cfg.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/src/cfg.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeSystem.dir/allocator.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/system/allocator.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/system/allocator.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeSystem.dir/fault.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/system/fault.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/system/fault.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeSystem.dir/mmap.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/system/mmap.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/system/mmap.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeSystem.dir/path.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/system/path.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/system/path.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/plugin",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api -I/mnt/f/CanNotGraduate/WasmEdge/include/api -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgePlugin.dir/plugin.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/plugin/plugin.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/plugin/plugin.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/po",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgePO.dir/argument_parser.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/po/argument_parser.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/po/argument_parser.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoaderFileMgr.dir/filemgr.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/filemgr.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/filemgr.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoaderFileMgr.dir/shared_library.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/shared_library.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/shared_library.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoaderFileMgr.dir/aot_section.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/aot_section.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/aot_section.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/component.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/component/sort.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/sort.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/sort.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/component/instance.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/instance.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/instance.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/component/alias.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/alias.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/alias.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/component/type.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/type.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/type.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/component/canonical.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/canonical.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/canonical.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/component/start.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/start.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/start.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/component/import_export.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/import_export.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/component/import_export.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/module.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/module.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/module.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/section.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/section.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/section.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/description.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/description.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/description.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/segment.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/segment.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/segment.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/type.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/type.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/type.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/expression.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/expression.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/expression.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/ast/instruction.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/instruction.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/ast/instruction.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/serialize/serial_description.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_description.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_description.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/serialize/serial_expression.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_expression.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_expression.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/serialize/serial_instruction.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_instruction.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_instruction.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/serialize/serial_module.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_module.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_module.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/serialize/serial_section.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_section.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_section.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/serialize/serial_segment.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_segment.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_segment.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/serialize/serial_type.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_type.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/serialize/serial_type.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/loader",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeLoader.dir/loader.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/loader/loader.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/loader/loader.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeValidator.dir/formchecker.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/validator/formchecker.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/validator/formchecker.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/validator",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeValidator.dir/validator.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/validator/validator.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/validator/validator.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/instantiate/import.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/import.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/import.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/instantiate/function.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/function.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/function.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/instantiate/global.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/global.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/global.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/instantiate/table.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/table.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/table.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/instantiate/memory.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/memory.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/memory.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/instantiate/elem.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/elem.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/elem.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/instantiate/data.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/data.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/data.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/instantiate/export.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/export.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/export.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/instantiate/module.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/module.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/instantiate/module.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/engine/proxy.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/proxy.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/proxy.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/engine/controlInstr.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/controlInstr.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/controlInstr.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/engine/tableInstr.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/tableInstr.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/tableInstr.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/engine/threadInstr.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/threadInstr.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/threadInstr.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/engine/memoryInstr.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/memoryInstr.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/memoryInstr.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/engine/variableInstr.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/variableInstr.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/variableInstr.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/engine/refInstr.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/refInstr.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/refInstr.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/engine/engine.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/engine.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/engine/engine.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/helper.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/helper.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/helper.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/executor",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeExecutor.dir/executor.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/executor/executor.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/executor/executor.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeHostModuleWasi.dir/environ.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/environ.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/environ.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeHostModuleWasi.dir/vinode.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/vinode.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/vinode.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeHostModuleWasi.dir/wasifunc.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/wasifunc.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/wasifunc.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeHostModuleWasi.dir/wasimodule.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/wasimodule.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/wasimodule.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeHostModuleWasi.dir/clock-linux.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/clock-linux.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/clock-linux.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeHostModuleWasi.dir/environ-linux.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/environ-linux.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/environ-linux.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/host/wasi",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeHostModuleWasi.dir/inode-linux.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/inode-linux.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/host/wasi/inode-linux.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/vm",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DWASMEDGE_USE_LLVM -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeVM.dir/vm.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/vm/vm.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/vm/vm.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DWASMEDGE_USE_LLVM -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeDriver.dir/compilerTool.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/driver/compilerTool.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/driver/compilerTool.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DWASMEDGE_USE_LLVM -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeDriver.dir/runtimeTool.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/driver/runtimeTool.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/driver/runtimeTool.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DWASMEDGE_USE_LLVM -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeDriver.dir/fuzzTool.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/driver/fuzzTool.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/driver/fuzzTool.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DWASMEDGE_USE_LLVM -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeDriver.dir/fuzzPO.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/driver/fuzzPO.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/driver/fuzzPO.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/driver",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DWASMEDGE_USE_LLVM -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeDriver.dir/uniTool.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/driver/uniTool.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/driver/uniTool.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/api",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DWASMEDGE_COMPILE_LIBRARY -DWASMEDGE_USE_LLVM -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api -I/mnt/f/CanNotGraduate/WasmEdge/include/api -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include -I/mnt/f/CanNotGraduate/WasmEdge/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/lib/system -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgeCAPI.dir/wasmedge.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/lib/api/wasmedge.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/lib/api/wasmedge.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3",
+  "command": "/usr/bin/cc  -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-assign-enum -Wno-cast-align -Wno-cast-qual -Wno-implicit-int-conversion -Wno-language-extension-token -Wno-missing-prototypes -Wno-pointer-sign -Wno-shorten-64-to-32 -Wno-sign-conversion -Wno-unused-function -o CMakeFiles/utilBlake3.dir/blake3.c.o -c /mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3.c",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3.c"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3",
+  "command": "/usr/bin/cc  -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-assign-enum -Wno-cast-align -Wno-cast-qual -Wno-implicit-int-conversion -Wno-language-extension-token -Wno-missing-prototypes -Wno-pointer-sign -Wno-shorten-64-to-32 -Wno-sign-conversion -Wno-unused-function -o CMakeFiles/utilBlake3.dir/blake3_dispatch.c.o -c /mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_dispatch.c",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_dispatch.c"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3",
+  "command": "/usr/bin/cc  -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIC -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -Wno-assign-enum -Wno-cast-align -Wno-cast-qual -Wno-implicit-int-conversion -Wno-language-extension-token -Wno-missing-prototypes -Wno-pointer-sign -Wno-shorten-64-to-32 -Wno-sign-conversion -Wno-unused-function -o CMakeFiles/utilBlake3.dir/blake3_portable.c.o -c /mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_portable.c",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_portable.c"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3",
+  "command": "/usr/bin/cc  -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -fPIC -Wno-assign-enum -Wno-cast-align -Wno-cast-qual -Wno-implicit-int-conversion -Wno-language-extension-token -Wno-missing-prototypes -Wno-pointer-sign -Wno-shorten-64-to-32 -Wno-sign-conversion -Wno-unused-function -o CMakeFiles/utilBlake3.dir/blake3_avx2_x86-64_unix.S.o -c /mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_avx2_x86-64_unix.S",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_avx2_x86-64_unix.S"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3",
+  "command": "/usr/bin/cc  -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -fPIC -Wno-assign-enum -Wno-cast-align -Wno-cast-qual -Wno-implicit-int-conversion -Wno-language-extension-token -Wno-missing-prototypes -Wno-pointer-sign -Wno-shorten-64-to-32 -Wno-sign-conversion -Wno-unused-function -o CMakeFiles/utilBlake3.dir/blake3_avx512_x86-64_unix.S.o -c /mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_avx512_x86-64_unix.S",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_avx512_x86-64_unix.S"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3",
+  "command": "/usr/bin/cc  -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -fPIC -Wno-assign-enum -Wno-cast-align -Wno-cast-qual -Wno-implicit-int-conversion -Wno-language-extension-token -Wno-missing-prototypes -Wno-pointer-sign -Wno-shorten-64-to-32 -Wno-sign-conversion -Wno-unused-function -o CMakeFiles/utilBlake3.dir/blake3_sse2_x86-64_unix.S.o -c /mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_sse2_x86-64_unix.S",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_sse2_x86-64_unix.S"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/thirdparty/blake3",
+  "command": "/usr/bin/cc  -I/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3 -O3 -DNDEBUG -fPIC -Wno-assign-enum -Wno-cast-align -Wno-cast-qual -Wno-implicit-int-conversion -Wno-language-extension-token -Wno-missing-prototypes -Wno-pointer-sign -Wno-shorten-64-to-32 -Wno-sign-conversion -Wno-unused-function -o CMakeFiles/utilBlake3.dir/blake3_sse41_x86-64_unix.S.o -c /mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_sse41_x86-64_unix.S",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/thirdparty/blake3/blake3_sse41_x86-64_unix.S"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -Dwasmedgec_EXPORTS -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api -I/mnt/f/CanNotGraduate/WasmEdge/include/api -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIE -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedgec.dir/wasmedgec.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/tools/wasmedge/wasmedgec.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/tools/wasmedge/wasmedgec.cpp"
+},
+{
+  "directory": "/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/tools/wasmedge",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -Dwasmedge_EXPORTS -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/include/api -I/mnt/f/CanNotGraduate/WasmEdge/include/api -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/spdlog-src/include -I/mnt/f/CanNotGraduate/WasmEdge/cmake-build-release-wsl/_deps/fmt-src/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -fPIE -fvisibility-inlines-hidden -Wall -Wextra -Werror -Wno-error=pedantic -Wno-psabi -o CMakeFiles/wasmedge.dir/wasmedge.cpp.o -c /mnt/f/CanNotGraduate/WasmEdge/tools/wasmedge/wasmedge.cpp",
+  "file": "/mnt/f/CanNotGraduate/WasmEdge/tools/wasmedge/wasmedge.cpp"
+}
+]

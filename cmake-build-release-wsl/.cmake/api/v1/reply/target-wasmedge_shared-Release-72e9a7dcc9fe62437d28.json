@@ -1,0 +1,366 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/api/libwasmedge.so"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"wasmedge_add_library",
+			"install",
+			"target_link_options",
+			"target_link_libraries",
+			"target_compile_options",
+			"wasmedge_setup_target",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"cmake/Helper.cmake",
+			"lib/api/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 101,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 177,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 137,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 116,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 122,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 126,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 178,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 150,
+				"parent" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 131,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeAOT::@9627ef982d47d111c851"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeLLVM::@804cc49b0bbb46e631d4"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeCommon::@9fc5b58572d5f236116a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "fmt::@976f4f0bee90b99ecdb6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "spdlog::@eb35cfce7893ccfeff1e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeSystem::@e0c788fd8d2fe6013071"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgePlugin::@057d9b90ed52cdf7cb28"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgePO::@ce22c4cec992ec683e95"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeLoaderFileMgr::@e1a391c9e31d76ac6e69"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeLoader::@e1a391c9e31d76ac6e69"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeValidator::@2f6a3be93f8d94f4c9aa"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeExecutor::@21d3940988011cd9f928"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeHostModuleWasi::@f9a3b04a2957e7897ad2"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeVM::@b4155ff98f8ab34f07b7"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeDriver::@7503c8a1fc2f43972847"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "wasmedgeCAPI::@1824546d6e30cc28d2dd"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "utilBlake3::@5e77e68abdc776bea2a5"
+		}
+	],
+	"id" : "wasmedge_shared::@1824546d6e30cc28d2dd",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-Wl,--version-script=/mnt/f/CanNotGraduate/WasmEdge/lib/api/libwasmedge.lds",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-Wl,--exclude-libs=liblldCOFF.a:liblldCommon.a:liblldCore.a:liblldDriver.a:liblldELF.a:liblldMachO.a:liblldMachO2.a:liblldMinGW.a:liblldReaderWriter.a:liblldWasm.a:liblldYAML.a",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/lib/llvm-12/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../_deps/spdlog-build/libspdlog.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../driver/libwasmedgeDriver.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../vm/libwasmedgeVM.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../plugin/libwasmedgePlugin.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../validator/libwasmedgeValidator.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../executor/libwasmedgeExecutor.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../host/wasi/libwasmedgeHostModuleWasi.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../loader/libwasmedgeLoader.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../loader/libwasmedgeLoaderFileMgr.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../po/libwasmedgePO.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../aot/libwasmedgeAOT.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../thirdparty/blake3/libutilBlake3.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../llvm/libwasmedgeLLVM.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../system/libwasmedgeSystem.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../common/libwasmedgeCommon.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../../_deps/spdlog-build/libspdlog.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../_deps/fmt-build/libfmt.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/llvm-12/lib/liblldELF.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/llvm-12/lib/liblldDriver.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/llvm-12/lib/liblldMachO.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/llvm-12/lib/liblldCommon.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/llvm-12/lib/liblldReaderWriter.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/llvm-12/lib/liblldYAML.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/llvm-12/lib/liblldCore.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/llvm-12/lib/libLLVM-12.so.1",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX",
+		"lto" : true
+	},
+	"name" : "wasmedge_shared",
+	"nameOnDisk" : "libwasmedge.so",
+	"paths" : 
+	{
+		"build" : "lib/api",
+		"source" : "lib/api"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"path" : "include/api/wasmedge/wasmedge.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "cmake-build-release-wsl/lib/api/CMakeFiles/wasmedgeCAPI.dir/wasmedge.cpp.o",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
