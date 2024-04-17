@@ -66,8 +66,25 @@ WasiModule::WasiModule() : ModuleInstance("wasi_snapshot_preview1") {
 
   // zjj add some functions about string
   // use the ptr in other class first, then move it into HostFunc
+  addHostFunc("string_count", std::make_unique<WasiStringCount>(Env));
   addHostFunc("string_concat", std::make_unique<WasiStringConcat>(Env));
-  addHostFunc("string_new", std::make_unique<WasiStringStore>(Env));
+  addHostFunc("string_store", std::make_unique<WasiStringStore>(Env));
+  addHostFunc("string_load", std::make_unique<WasiStringLoad>(Env));
+  addHostFunc("string_get_len_by_index", std::make_unique<WasiGetStringLenByIndex>(Env));
+  addHostFunc("string_delete_by_index", std::make_unique<WasiStringDeleteByIndex>(Env));
+  addHostFunc("string_compare_by_index", std::make_unique<WasiStringCompareByIndex>(Env));
+  addHostFunc("string_compare", std::make_unique<WasiStringCompare>(Env));
+  addHostFunc("string_set_value", std::make_unique<WasiStringSetValue>(Env));
+  addHostFunc("string_to_int", std::make_unique<WasiStringToInt>(Env));
+  addHostFunc("string_from_int", std::make_unique<WasiStringFromInt>(Env));
+  addHostFunc("string_to_float", std::make_unique<WasiStringToFloat>(Env));
+  addHostFunc("string_from_float", std::make_unique<WasiStringFromFloat>(Env));
+  addHostFunc("string_insert", std::make_unique<WasiStringInsert>(Env));
+  addHostFunc("string_slices", std::make_unique<WasiStringSlices>(Env));
+  addHostFunc("string_find_substring", std::make_unique<WasiStringFindSubstring>(Env));
+  addHostFunc("string_rfind_substring", std::make_unique<WasiStringRFindSubstring>(Env));
+
+
 
   // To make the socket API compatible with the old oneit p
   // we will duplicate all the API to V1 and V2.

@@ -66,7 +66,7 @@ private:
 
 class PluginModule : public Runtime::Instance::ModuleInstance {
 public:
-  PluginModule() : ModuleInstance("get_string_module") {
+  PluginModule() : ModuleInstance("module_wasm_name") {
     addHostFunc("get_string", std::make_unique<GetString>(StringOpt.value(),
                                                           UpperOpt.value()));
   }

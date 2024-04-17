@@ -3464,7 +3464,7 @@ Expect<uint32_t> WasiStringFindSubstring::body(const Runtime::CallingFrame &Fram
 
   std::string S = std::string(Str.data(), Str.size());
   std::string SubS = std::string(SubStr.data(), SubStr.size());
-  *Result = Wasmedge::StringFunc::findSubString(Str.data(), StrLen,
+  *Result = WasmEdge::StringFunc::findSubString(Str.data(), StrLen,
                                                 SubStr.data(), SubStrLen);
   return __WASI_ERRNO_SUCCESS;
 }

@@ -16,7 +16,7 @@
 #ifndef WASMEDGE_STRING_H
 #define WASMEDGE_STRING_H
 
-namespace Wasmedge{
+namespace WasmEdge{
 namespace StringFunc{
 static size_t criticalFactorization(unsigned char *needle, size_t needle_len,
                                     size_t *period) {
@@ -246,9 +246,9 @@ uint32_t findSubString(const char *haystack, uint32_t hsLen,
   if (hs == NULL || ne[1] == '\0')
     return hs == NULL ? -1 : hs - (const unsigned char *)haystack;
   if (ne[2] == '\0')
-    return (unsigned char *)strstr2(hs, ne) - hs;
+    return (unsigned char *)strstr2(hs, ne) - (const unsigned char *)haystack;
   if (ne[3] == '\0')
-    return (unsigned char *)strstr3(hs, ne) - hs;
+    return (unsigned char *)strstr3(hs, ne) - (const unsigned char *)haystack;
 
   /* Ensure haystack length is at least as long as needle length.
      Since a match may occur early on in a huge haystack, use strnlen
@@ -266,7 +266,8 @@ uint32_t findSubString(const char *haystack, uint32_t hsLen,
   /* Use Two-Way algorithm for very long needles.  */
   if ((ne_len > 256))
     return (unsigned char *)two_way_long_needle((unsigned char *)hs, hs_len,
-                                                (unsigned char *)ne, ne_len) - hs;
+                                                (unsigned char *)ne, ne_len)
+                                        - (const unsigned char *)haystack;
 
   const unsigned char *end = hs + hs_len - ne_len;
   uint8_t shift[256];
@@ -317,6 +318,6 @@ uint32_t findSubString(const char *haystack, uint32_t hsLen,
   }
 }
 } // namespace StringFunc
-} // namespace Wasmedge
+} // namespace WasmEdge
 
 #endif // WASMEDGE_STRING_H
