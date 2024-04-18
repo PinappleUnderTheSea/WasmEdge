@@ -57,7 +57,7 @@ public:
       char *const End = std::copy(String.begin(), String.end(), Buf.data());
       *Written = End - Buf.data();
     }
-    std::cout << *Written<<std::endl;
+//    std::cout << *Written<<std::endl;
     return {};
   }
 

@@ -11,6 +11,7 @@
 
 #include <algorithm>
 #include <array>
+#include <iostream>
 #include <limits>
 #include <numeric>
 #include <type_traits>
@@ -3308,6 +3309,7 @@ Expect<uint32_t> WasiStringToInt::body(const Runtime::CallingFrame &Frame,
   }
 
   *Result = std::stoi(std::string(Str.data(), Str.size()));
+//  std::cout << (*Result) <<std::endl;
   return __WASI_ERRNO_SUCCESS;
 }
 
