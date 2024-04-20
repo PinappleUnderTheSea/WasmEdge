@@ -3110,27 +3110,27 @@ Expect<uint32_t> WasiStringConcat::body(const Runtime::CallingFrame &Frame,
     return __WASI_ERRNO_FAULT;
   }
 
-  const auto Path1 = MemInst->getSpan<uint8_t >(Path1Ptr, Path1Len);
+  const auto Path1 = MemInst->getSpan<char >(Path1Ptr, Path1Len);
   if (Path1.size() != Path1Len) {
     return __WASI_ERRNO_FAULT;
   }
-  const auto Path2 = MemInst->getSpan<uint8_t>(Path2Ptr, Path2Len);
+  const auto Path2 = MemInst->getSpan<char>(Path2Ptr, Path2Len);
   if (Path2.size() != Path2Len) {
     return __WASI_ERRNO_FAULT;
   }
-  auto *Path = MemInst->getPointer<uint8_t*>(PathPtr);
-  if (Path == nullptr) {
+  auto Path = MemInst->getSpan<char>(PathPtr, Path1Len + Path2Len + 1);
+  if (Path.size() != Path1Len + Path2Len + 1) {
     return __WASI_ERRNO_FAULT;
   }
 
-  auto *Len = MemInst->getPointer<uint8_t*>(LenPtr);
+  auto *Len = MemInst->getPointer<uint32_t*>(LenPtr);
   if (Len == nullptr) {
     return __WASI_ERRNO_FAULT;
   }
 
-  std::copy(Path1.begin(), Path1.end(), Path);
-  std::copy(Path2.begin(), Path2.end(), Path + Path1Len);
-  *Len = Path1Len + Path2Len;
+  std::copy(Path1.begin(), Path1.end(), Path.data());
+  std::copy(Path2.begin(), Path2.end(), Path.data() + Path1Len);
+  *Len = Path1Len + Path2Len + 1;
   return __WASI_ERRNO_SUCCESS;
 }
 
@@ -3174,7 +3174,7 @@ Expect<uint32_t> WasiStringLoad::body(const Runtime::CallingFrame &Frame,
     return __WASI_ERRNO_FAULT;
   }
 
-  auto *DataLen = MemInst->getPointer<uint8_t*>(DataLenPtr);
+  auto *DataLen = MemInst->getPointer<uint32_t*>(DataLenPtr);
   if(DataLen == nullptr){
     return __WASI_ERRNO_FAULT;
   }
@@ -3182,6 +3182,8 @@ Expect<uint32_t> WasiStringLoad::body(const Runtime::CallingFrame &Frame,
   auto String = Strings[Index];
   std::copy(String.begin(), String.end(), Data);
   *DataLen = String.size();
+  //std::cout << String.size() << std::endl;
+  //std::cout << String << std::endl;
   return __WASI_ERRNO_SUCCESS;
 }
 
@@ -3197,7 +3199,7 @@ Expect<uint32_t> WasiGetStringLenByIndex::body(const Runtime::CallingFrame &Fram
     return __WASI_ERRNO_INVAL;
   }
 
-  auto *Len = MemInst->getPointer<uint8_t*>(LenPtr);
+  auto *Len = MemInst->getPointer<uint32_t*>(LenPtr);
   if(Len == nullptr){
     return __WASI_ERRNO_FAULT;
   }
@@ -3232,7 +3234,7 @@ Expect<uint32_t> WasiStringCompareByIndex::body(const Runtime::CallingFrame &Fra
     return __WASI_ERRNO_INVAL;
   }
 
-  auto *Result = MemInst->getPointer<uint8_t*>(ResultPtr);
+  auto *Result = MemInst->getPointer<uint32_t*>(ResultPtr);
   if(Result == nullptr){
     return __WASI_ERRNO_FAULT;
   }
@@ -3259,7 +3261,7 @@ Expect<uint32_t> WasiStringCompare::body(const Runtime::CallingFrame &Frame,
     return __WASI_ERRNO_FAULT;
   }
 
-  auto *Result = MemInst->getPointer<uint8_t*>(ResultPtr);
+  auto *Result = MemInst->getPointer<uint32_t*>(ResultPtr);
   if(Result == nullptr){
     return __WASI_ERRNO_FAULT;
   }
@@ -3308,7 +3310,12 @@ Expect<uint32_t> WasiStringToInt::body(const Runtime::CallingFrame &Frame,
     return __WASI_ERRNO_FAULT;
   }
 
-  *Result = std::stoi(std::string(Str.data(), Str.size()));
+  try{
+    *Result = std::stoi(std::string(Str.data(), Str.size()));
+  }catch(std::invalid_argument&){
+    std::cout << "invalid string to be converted into int" << std::endl;
+    *Result = 0;
+  }
 //  std::cout << (*Result) <<std::endl;
   return __WASI_ERRNO_SUCCESS;
 }
@@ -3355,7 +3362,12 @@ Expect<uint32_t> WasiStringToFloat::body(const Runtime::CallingFrame &Frame,
     return __WASI_ERRNO_FAULT;
   }
 
-  *Result = std::stof(std::string(Str.data(), Str.size()));
+  try{
+    *Result = std::stof(std::string(Str.data(), Str.size()));
+  }catch(std::invalid_argument&){
+    std::cout << "invalid string to be converted into float" << std::endl;
+    *Result = 0.0;
+  }
   return __WASI_ERRNO_SUCCESS;
 }
 
@@ -3464,8 +3476,6 @@ Expect<uint32_t> WasiStringFindSubstring::body(const Runtime::CallingFrame &Fram
     return __WASI_ERRNO_FAULT;
   }
 
-  std::string S = std::string(Str.data(), Str.size());
-  std::string SubS = std::string(SubStr.data(), SubStr.size());
   *Result = WasmEdge::StringFunc::findSubString(Str.data(), StrLen,
                                                 SubStr.data(), SubStrLen);
   return __WASI_ERRNO_SUCCESS;
@@ -3489,7 +3499,7 @@ Expect<uint32_t> WasiStringRFindSubstring::body (const Runtime::CallingFrame &Fr
     return __WASI_ERRNO_FAULT;
   }
 
-  auto *Result = MemInst->getPointer<uint8_t*>(ResultPtr);
+  auto *Result = MemInst->getPointer<uint32_t*>(ResultPtr);
   if (Result == nullptr) {
     return __WASI_ERRNO_FAULT;
   }

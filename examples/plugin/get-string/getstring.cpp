@@ -18,10 +18,10 @@ PO::Option<std::string> StringOpt1(PO::Description("string to return"sv),
                                   PO::DefaultValue<std::string>("hello1"));
 
 PO::Option<std::string> StringOpt2(PO::Description("string to return2"sv),
-                                  PO::MetaVar("STRIN2G"sv),
+                                  PO::MetaVar("STRING2"sv),
                                   PO::DefaultValue<std::string>("world"));
 
-PO::Option<PO::Toggle> UpperOpt(PO::Description("return in upper case"sv));
+PO::Option<int> UpperOpt(PO::Description("return in upper case"sv));
 
 void addOptions(const Plugin::Plugin::PluginDescriptor *,
                 PO::ArgumentParser &Parser) noexcept {
@@ -30,10 +30,10 @@ void addOptions(const Plugin::Plugin::PluginDescriptor *,
 
 class GetString : public Runtime::HostFunction<GetString> {
 public:
-  GetString(const std::string &String1, const std::string String2, bool Upper)
+  GetString(const std::string &String1, const std::string &String2, int Upper)
       : String1(String1), String2(String2), Upper(Upper) {}
   Expect<void> body(const Runtime::CallingFrame &Frame, uint32_t BufPtr,
-                    uint32_t BufLen, uint32_t WrittenPtr) {
+                    uint32_t BufLen, uint32_t Index, uint32_t WrittenPtr) {
     // Check memory instance from module.
     auto *MemInst = Frame.getMemoryByIndex(0);
     if (MemInst == nullptr) {
@@ -51,7 +51,7 @@ public:
     if (unlikely(Written == nullptr)) {
       return Unexpect(ErrCode::Value::HostFuncError);
     }
-    if(Upper){
+    if(Index==0){
       char *const End = std::copy(String1.begin(), String1.end(), Buf.data());
       *Written = End - Buf.data();
     }else{
@@ -64,8 +64,8 @@ public:
 
 private:
   std::string_view String1;
-  std::string_view  String2;
-  bool Upper;
+  std::string_view String2;
+  int Upper;
 };
 
 class PluginModule : public Runtime::Instance::ModuleInstance {
