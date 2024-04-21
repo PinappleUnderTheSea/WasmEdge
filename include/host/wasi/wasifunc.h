@@ -644,7 +644,7 @@ class WasiStringCompareByIndex: public Wasi<WasiStringCompareByIndex>{
 public:
   WasiStringCompareByIndex(WASI::Environ &HostEnv) : Wasi(HostEnv){}
 
-  Expect<uint32_t> body (const Runtime::CallingFrame &Frame, uint32_t Index1,
+  Expect<void> body (const Runtime::CallingFrame &Frame, uint32_t Index1,
                         uint32_t Index2,
                         uint32_t /* Out */ ResultPtr);
 };

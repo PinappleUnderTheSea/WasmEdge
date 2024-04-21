@@ -3223,24 +3223,25 @@ Expect<uint32_t>WasiStringDeleteByIndex::body(const Runtime::CallingFrame &Frame
   return __WASI_ERRNO_SUCCESS;
 }
 
-Expect<uint32_t> WasiStringCompareByIndex::body(const Runtime::CallingFrame &Frame,
+Expect<void> WasiStringCompareByIndex::body(const Runtime::CallingFrame &Frame,
                                uint32_t Index1, uint32_t Index2,
                                uint32_t /* Out */ ResultPtr) {
   auto *MemInst = Frame.getMemoryByIndex(0);
   if(Index1 >= Strings.size()){
-    return __WASI_ERRNO_INVAL;
+      return Unexpect(ErrCode::Value::HostFuncError);
+;
   }
   if(Index2 >= Strings.size()){
-    return __WASI_ERRNO_INVAL;
+      return Unexpect(ErrCode::Value::HostFuncError);
   }
 
   auto *Result = MemInst->getPointer<uint32_t*>(ResultPtr);
   if(Result == nullptr){
-    return __WASI_ERRNO_FAULT;
+      return Unexpect(ErrCode::Value::HostFuncError);
   }
 
   *Result = Strings[Index1].compare(Strings[Index2]);
-  return __WASI_ERRNO_SUCCESS;
+  return {};
 }
 Expect<uint32_t> WasiStringCompare::body(const Runtime::CallingFrame &Frame,
                                          uint32_t Str1Ptr, uint32_t Str1Len,

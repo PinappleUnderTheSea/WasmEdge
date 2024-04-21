@@ -10,6 +10,7 @@
   (import "wasi_snapshot_preview1" "string_from_int" (func $string_from_int(param i32 i32 i32) (result i32)))
   (import "wasi_snapshot_preview1" "string_count" (func $string_count (param i32) (result i32)))
   (import "wasi_snapshot_preview1" "string_delete_by_index" (func $string_delete_by_index (param i32) (result i32)))
+  (import "wasi_snapshot_preview1" "string_get_len_by_index" (func $string_get_len_by_index (param i32 i32) (result i32)))
   (memory 1 1)
   (func (export "_start")
     ;; address layout
@@ -53,7 +54,7 @@
     (drop (call $string_delete_by_index (i32.const 1)))
     (drop (call $string_count (i32.const 0)))
     (drop (call $string_from_int (i32.load (i32.const 0)) (i32.const 4) (i32.const 8)))
-    (i32.store (i32.const 16) (i32.const 0))
+    (i32.store (i32.const 16) (i32.const 4))
 ;; add \n in the end of string
     i32.const 8
     i32.const 8
@@ -63,6 +64,21 @@
     i32.store
     (i32.store (i32.load(i32.const 8)) (i32.const 10))
     (drop (call $fd_write (i32.const 1) (i32.const 16) (i32.const 1) (i32.const 8)))
+
+    (drop (call $string_get_len_by_index (i32.const 0) (i32.const 0)))
+    (drop (call $string_from_int (i32.load (i32.const 0)) (i32.const 4) (i32.const 8)))
+    (i32.store (i32.const 16) (i32.const 4))
+    ;; add \n in the end of string
+    i32.const 8
+    i32.const 8
+    i32.load
+    i32.const 4
+    i32.add
+    i32.store
+    (i32.store (i32.load(i32.const 8)) (i32.const 10))
+    (drop (call $fd_write (i32.const 1) (i32.const 16) (i32.const 1) (i32.const 8)))
+
+
     ;; call proc_exit
     ;; 0 -> successful exit
     (call $proc_exit (i32.const 0))
