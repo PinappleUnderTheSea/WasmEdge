@@ -3397,8 +3397,8 @@ Expect<uint32_t> WasiStringFromFloat::body(const Runtime::CallingFrame &Frame,
 }
 Expect<uint32_t> WasiStringInsert::body(const Runtime::CallingFrame &Frame,
                                         uint32_t StrPtr, uint32_t StrLen,
-                                        uint32_t Index, uint32_t InsertPtr,
-                                        uint32_t InsertLen,
+                                        uint32_t InsertPtr, uint32_t InsertLen,
+                                        uint32_t Index,
                                         uint32_t /* Out */ ResultPtr) {
   auto *MemInst = Frame.getMemoryByIndex(0);
   if(MemInst == nullptr){
@@ -3421,8 +3421,16 @@ Expect<uint32_t> WasiStringInsert::body(const Runtime::CallingFrame &Frame,
   }
 
   std::string S = std::string(Str.data(), Str.size());
-  S.insert(Index, Insert.data(), Insert.size());
-  std::copy(S.begin(), S.end(), Result);
+  try{
+	//std::cout << "S: " << S << std::endl;
+  	S.insert(Index, Insert.data(), Insert.size());
+	//std::cout << "Insert: " << Insert.data() << std::endl;
+	//std::cout << "index: " << Index << std::endl;
+	//std::cout << S << std::endl;
+  	std::copy(S.begin(), S.end(), Result);
+  }catch(std::invalid_argument&){
+	std::cout << "invalid string"<<Insert.data()<<" to be inserted into " << S << std::endl;
+  }
   return __WASI_ERRNO_SUCCESS;
 }
 
