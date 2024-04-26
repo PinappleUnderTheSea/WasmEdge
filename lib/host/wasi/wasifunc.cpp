@@ -3487,6 +3487,7 @@ Expect<uint32_t> WasiStringFindSubstring::body(const Runtime::CallingFrame &Fram
 
   *Result = WasmEdge::StringFunc::findSubString(Str.data(), StrLen,
                                                 SubStr.data(), SubStrLen);
+  // std::cout << "in cpp " << *Result << std::endl;
   return __WASI_ERRNO_SUCCESS;
 }
 
@@ -3515,6 +3516,10 @@ Expect<uint32_t> WasiStringRFindSubstring::body (const Runtime::CallingFrame &Fr
 
   std::string S = std::string(Str.data(), Str.size());
   std::string SubS = std::string(SubStr.data(), SubStr.size());
+//  std::cout << S << std::endl;
+ // std::cout << SubS << std::endl;
+ // std::cout << (int64_t)S.rfind(SubS) << std::endl;
+ // std::cout << "cpp output above" << std::endl;
   *Result = S.rfind(SubS);
   return __WASI_ERRNO_SUCCESS;
 }
