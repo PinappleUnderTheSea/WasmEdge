@@ -14,7 +14,7 @@ func main() {
 	flag.Parse()
 
 	// Prepare the command
-	cmd := exec.Command("/Users/junjie.zhu/Desktop/Code/WasmEdge/build/tools/wasmedge/wasmedge ../UnitTest/zjj-test-wasm/slices_find_rfind.wasm", *string1, *string2, *upper)
+	cmd := exec.Command("/Users/junjie.zhu/Desktop/Code/WasmEdge/build/tools/wasmedge/wasmedge /Users/junjie.zhu/Desktop/Code/WasmEdge/examples/plugin/get-string/UnitTest/zjj-test-wasm/compare_in_memory_and_stack.wasm", *string1, *string2, *upper)
 
 
 	// Run the command

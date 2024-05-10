@@ -23,30 +23,30 @@
     (drop (call $string_from_int (i32.load (i32.const 0)) (i32.const 4) (i32.const 8)))
 
     (i32.store (i32.const 16) (i32.const 4))
-    i32.const 8
-    i32.const 8
-    i32.load
-    i32.const 4
-    i32.add
-    i32.store
-    (i32.store (i32.load(i32.const 8)) (i32.const 10))
+    (i32.store (i32.const 20) (i32.load (i32.const 8)))
 
     (drop (call $fd_write (i32.const 1) (i32.const 16) (i32.const 1) (i32.const 8)))
+
+    (i32.store (i32.const 0) (i32.const 10))
+    (i32.store (i32.const 10) (i32.const 10))
+    (i32.store (i32.const 4) (i32.const 1))
+    (drop (call $fd_write (i32.const 1) (i32.const 0) (i32.const 1) (i32.const 8)))
+
+
 
     (drop (call $string_compare (i32.const 24) (i32.const 20) (i32.const 48) (i32.const 16) (i32.const 0)))
 
     (drop (call $string_from_int (i32.load (i32.const 0)) (i32.const 4) (i32.const 8)))
 
     (i32.store (i32.const 16) (i32.const 4))
-    i32.const 8
-    i32.const 8
-    i32.load
-    i32.const 4
-    i32.add
-    i32.store
-    (i32.store (i32.load(i32.const 8)) (i32.const 10))
+    (i32.store (i32.const 20) (i32.load (i32.const 8)))
 
     (drop (call $fd_write (i32.const 1) (i32.const 16) (i32.const 1) (i32.const 8)))
+    (i32.store (i32.const 0) (i32.const 10))
+    (i32.store (i32.const 10) (i32.const 10))
+    (i32.store (i32.const 4) (i32.const 1))
+    (drop (call $fd_write (i32.const 1) (i32.const 0) (i32.const 1) (i32.const 8)))
+
 
     (call $proc_exit (i32.const 0))
 ;;    (drop)

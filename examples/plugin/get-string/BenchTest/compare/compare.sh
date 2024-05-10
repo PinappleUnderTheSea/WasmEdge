@@ -1,5 +1,2 @@
+a=$(gtime /Users/junjie.zhu/Desktop/Code/WasmEdge/build/tools/wasmedge/wasmedge --string1="ouaimibaobaomibaobaoaibuaiouousuebaobao" --string2="eb" --upper=1 find.wasm)
 
-for i in {1..1000}
-do
-   a=$(wasmedge --string1="1423.111aaasihd" --string2="2455.2bbb" --upper=1 ../UnitTest/zjj-test-wasm/compare_in_memory_and_stack.wasm )
-done
