@@ -12,26 +12,9 @@
   (data (i32.const 24) "ebao")
   (func (export "_start")
 
-    (i32.store (i32.const 0) (i32.const 0))
-    (loop $my_loop
-        (drop (call $string_find_substring (i32.const 48) (i32.const 40) (i32.const 24) (i32.const 4) (i32.const 16)))
-        i32.const 0
+  (drop (call $string_find_substring (i32.const 48) (i32.const 40) (i32.const 24) (i32.const 4) (i32.const 16)))
 
-        (i32.load(i32.const 0))
-        i32.const 1
-        i32.add
-
-        i32.store
-
-        (i32.load(i32.const 0))
-        i32.const 100000000
-        i32.lt_s
-        br_if $my_loop
-)
-
-    (drop (call $fd_write (i32.const 1) (i32.const 0) (i32.const 1) (i32.const 8)))
-
-    (call $proc_exit (i32.const 0))
+  (call $proc_exit (i32.const 0))
 ;;    (drop)
   )
 )
